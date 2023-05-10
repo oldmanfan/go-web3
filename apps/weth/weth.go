@@ -7,11 +7,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/chenzhijie/go-web3"
-	"github.com/chenzhijie/go-web3/eth"
-	"github.com/chenzhijie/go-web3/types"
 	"github.com/ethereum/go-ethereum/common"
 	eTypes "github.com/ethereum/go-ethereum/core/types"
+	"github.com/oldmanfan/go-web3"
+	"github.com/oldmanfan/go-web3/eth"
+	"github.com/oldmanfan/go-web3/types"
 )
 
 type WETH struct {
