@@ -64,6 +64,8 @@ func (h *HTTP) Call(method string, out interface{}, params ...interface{}) error
 		}
 		// fmt.Printf("data %s\n", data)
 		request.Params = data
+	} else {
+		request.Params = []byte("[]")
 	}
 	raw, err := json.Marshal(request)
 	if err != nil {
